@@ -3,6 +3,7 @@
 // import { Home } from "@pages/Home";
 // import { NotFound } from "@pages/NotFound";
 import { MainLayout } from "@components"
+import { ROUTE_PATHS } from "@constants";
 import { Detail,Home,NotFound } from "@pages";
 import { Route, Routes } from "react-router";
 
@@ -10,15 +11,15 @@ function App() {
   const ROUTES = [
     {
       element: <Home />,
-      path: "/",
+      path: ROUTE_PATHS.HOME,
     },
      {
       element: <Detail />,
-      path: "/detail/:id",
+      path: ROUTE_PATHS.DETAIL,
     },
      {
       element: <NotFound />,
-      path: "*",
+      path: ROUTE_PATHS.NOT_FOUND,
     },
   ];
 
