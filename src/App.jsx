@@ -1,7 +1,9 @@
-import MainLayout from "@components/Layout/MainLayout";
-import { Detail } from "@pages/Detail";
-import { Home } from "@pages/Home";
-import { NotFound } from "@pages/NotFound";
+// import MainLayout from "@components/Layout/MainLayout";
+// import { Detail } from "@pages/Detail";
+// import { Home } from "@pages/Home";
+// import { NotFound } from "@pages/NotFound";
+import { MainLayout } from "@components"
+import { Detail,Home,NotFound } from "@pages";
 import { Route, Routes } from "react-router";
 
 function App() {
