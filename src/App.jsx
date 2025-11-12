@@ -1,7 +1,3 @@
-// import MainLayout from "@components/Layout/MainLayout";
-// import { Detail } from "@pages/Detail";
-// import { Home } from "@pages/Home";
-// import { NotFound } from "@pages/NotFound";
 import { MainLayout } from "@components"
 import { ROUTE_PATHS } from "@constants";
 import { Detail,Home,NotFound } from "@pages";
