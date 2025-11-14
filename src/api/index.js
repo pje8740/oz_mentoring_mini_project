@@ -1,2 +1,2 @@
-export * from "./fetchMoviesDetail"
-export * from "./fetchPopularMovieList"
+export * from "./fetchMoviesDetail";
+export * from "./fetchPopularMovieList";

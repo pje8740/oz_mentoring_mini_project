@@ -34,7 +34,9 @@ function useFetch({ options = {}, query }) {
           setError(err);
         }
       } finally {
-        setIsLoading(false);
+        if (!controller.signal.aborted) {
+          setIsLoading(false);
+        }
       }
     };
 

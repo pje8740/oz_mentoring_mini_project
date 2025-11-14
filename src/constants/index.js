@@ -1,1 +1,1 @@
-export { ROUTE_PATHS } from "./urls"
+export { ROUTE_PATHS } from "./urls";
