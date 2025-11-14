@@ -1,4 +1,5 @@
-export const TMDB_API_URL = "https://api.themoviedb.org/3";
+export const TMDB_API_URL = "https://api.themoviedb.org/3/";
+export const TMDB_IMAGE_URL = "https://image.tmdb.org/t/p/w500";
 
 export const API_ROUTES = {
   MOVIE_DETAIL: ({ movieId }) => `movie/${movieId}`,
@@ -9,4 +10,8 @@ export const ROUTE_PATHS = {
   DETAIL: "/detail/:id",
   HOME: "/",
   NOT_FOUND: "*",
+};
+
+export const ROUTE_HANDLERS = {
+  DETAIL: (id) => `/detail/${id}`,
 };

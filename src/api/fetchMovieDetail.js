@@ -2,12 +2,12 @@ import { API_ROUTES, TMDB_API_URL } from "@constants";
 
 const defaultOptions = {
   headers: {
-    Authorization: `Bearer ${import.meta.env.VITE_TMDB_API_ACCESS_TOKEN}`,
+    Authorization: `Bearer ${import.meta.env.VITE_TMDB_ACCESS_TOKEN}`,
   },
 };
 
-export const fetchMovieDetails = async ({ movieId, signal }) => {
-  const apiUrl = new URL(API_ROUTES.MOVIE_DETAILS({ movieId }), TMDB_API_URL);
+export const fetchMovieDetail = async ({ movieId, signal }) => {
+  const apiUrl = new URL(API_ROUTES.MOVIE_DETAIL({ movieId }), TMDB_API_URL);
   apiUrl.searchParams.set("language", "ko-KR");
 
   const response = await fetch(apiUrl, {

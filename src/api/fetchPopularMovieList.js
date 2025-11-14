@@ -2,7 +2,7 @@ import { API_ROUTES, TMDB_API_URL } from "@constants";
 
 const defaultOptions = {
   headers: {
-    Authorization: `Bearer ${import.meta.env.VITE_TMDB_API_ACCESS_TOKEN}`,
+    Authorization: `Bearer ${import.meta.env.VITE_TMDB_ACCESS_TOKEN}`,
   },
 };
 
@@ -21,7 +21,6 @@ export const fetchPopularMovieList = async ({ page = 1, signal }) => {
   }
 
   const result = await response.json();
-
   return {
     page: result.page,
     results: result.results
