@@ -4,10 +4,10 @@ import useFetch from "@hooks/useFetch";
 import { useParams } from "react-router";
 
 export const Detail = () => {
-  const { movieId } = useParams();
+  const { id: movieId } = useParams();
 
   const { data, error, isLoading } = useFetch({
-    query: (options) => fetchMovieDetail({ movieId, ...options }),
+    queryFn: (options) => fetchMovieDetail({ movieId, ...options }),
     queryKey: [movieId],
   });
 
