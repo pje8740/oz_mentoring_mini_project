@@ -1,4 +1,5 @@
 import { ROUTE_PATHS } from "@constants/urls";
+import useDebounce from "@hooks";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router";
 
@@ -42,7 +43,7 @@ export const SearchBar = () => {
     }
 
     const encodeQuery = encodeURIComponent(trimmedQuery);
-    const targetSearch = `${ROUTE_PATHS.SEARCH}? query=${encodeQuery}`;
+    const targetSearch = `${ROUTE_PATHS.SEARCH}?query=${encodeQuery}`;
 
     if (isAlreadyOnTarget) {
       shouldSyncQueryRef.current = false;
