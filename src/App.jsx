@@ -15,7 +15,7 @@ function App() {
     },
     {
       element: <Search />,
-      path: ROUTE_PATHS.HEADER,
+      path: ROUTE_PATHS.SEARCH,
     },
     {
       element: <NotFound />,
