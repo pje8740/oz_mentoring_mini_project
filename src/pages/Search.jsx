@@ -1,6 +1,6 @@
 import { fetchSearchMovies } from "@api/fetchSearchMovies";
 import { MovieCard } from "@components";
-import useFetch from "@hooks";
+import { useFetch } from "@hooks";
 import { useSearchParams } from "react-router";
 
 const Search = () => {
