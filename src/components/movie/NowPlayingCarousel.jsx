@@ -1,6 +1,6 @@
 import { fetchNowPlayingMovies } from "@api/fetchNowPlayingMovies";
-import { Carousel, MovieCard } from "@components";
-import useFetch from "@hooks";
+import { Carousel, MovieCard } from "@components/index";
+import { useFetch } from "@hooks";
 import { SwiperSlide } from "swiper/react";
 
 const NowPlayingCarousel = () => {

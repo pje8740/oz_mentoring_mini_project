@@ -1,8 +1,8 @@
 import { API_ROUTES, TMDB_API_URL } from "@constants";
 
-const defaltOptions = {
-  header: {
-    Authorization: `Bearer ${import.meta.env.VITE_TMDB_API_KEY}`,
+const defaultOptions = {
+  headers: {
+    Authorization: `Bearer ${import.meta.env.VITE_TMDB_ACCESS_TOKEN}`,
   },
 };
 
@@ -12,7 +12,7 @@ export const fetchNowPlayingMovies = async ({ page = 1, signal }) => {
   apiUrl.searchParams.set("language", "ko-KR");
 
   const response = await fetch(apiUrl, {
-    ...defaltOptions,
+    ...defaultOptions,
     signal,
   });
 
@@ -34,3 +34,4 @@ export const fetchNowPlayingMovies = async ({ page = 1, signal }) => {
       })),
   };
 };
+``;
