@@ -38,8 +38,8 @@ const Search = () => {
     );
   }
   return (
-    <div>
-      <section>
+    <div className="flex flex-col items-center bg-neutral-50">
+      <section className="mx-auto grid grid-cols-2 gap-4 px-4 pt-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
         {data.results.map((movie) => (
           <MovieCard key={movie.id} movie={movie} />
         ))}

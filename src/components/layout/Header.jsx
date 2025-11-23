@@ -7,7 +7,7 @@ const Header = () => {
       <div className="mx-auto flex h-16 items-center justify-between bg-neutral-50 px-6 py-2">
         <div className="flex flex-1 justify-start">
           <h1>
-            <Link>SCARECROW MOVIE</Link>
+            <Link>🎥 은이 무비</Link>
           </h1>
         </div>
         <div className="flex flex-[1.5] justify-center">
