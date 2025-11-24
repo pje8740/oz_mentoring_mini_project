@@ -1,8 +1,8 @@
-import { API_ROUTES, TMDB_API_URL } from "@constants/urls";
+import { API_ROUTES, TMDB_API_URL } from "@constants";
 
 const defaultOptions = {
   headers: {
-    Authorization: `Bearer ${import.meta.env.VITE_TMDB_API_KEY}`,
+    Authorization: `Bearer ${import.meta.env.VITE_TMDB_ACCESS_TOKEN}`,
   },
 };
 
@@ -25,7 +25,7 @@ export const fetchSearchMovies = async ({ page = 1, query, signal }) => {
 
   return {
     page: result.page,
-    result: result.results.map((movie) => ({
+    results: result.results.map((movie) => ({
       id: movie.id,
       posterPath: movie.poster_path,
       title: movie.title,
