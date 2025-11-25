@@ -1,5 +1,6 @@
 import { ROUTE_HANDLERS, TMDB_IMAGE_URL } from "@constants";
 import { cn } from "@utils/cn";
+import { StarIcon } from "lucide-react";
 import { Link } from "react-router";
 
 const MovieCard = ({ movie }) => {
@@ -25,7 +26,8 @@ const MovieCard = ({ movie }) => {
             {movie.title}
           </h2>
           <p className="mt-1 flex items-center gap-1 text-xs text-yellow-400">
-            ⭐ {movie.voteAverage.toFixed(1)}
+            <StarIcon className="h-3 w-3 fill-current" />{" "}
+            {movie.voteAverage.toFixed(1)}
           </p>
         </div>
       </Link>

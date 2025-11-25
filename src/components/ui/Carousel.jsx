@@ -1,11 +1,13 @@
-import { cn } from "@utils/cn";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { THEME } from "@constants";
+import useTheme from "@hooks";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Swiper } from "swiper/react";
+import { cn } from "@utils/cn";
 
 import "./Carousel.css";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper } from "swiper/react";
 
 const AUTO_PLAY_DELAY = 3000;
 const CUSTOM_CLASSES_CLASS = "custom-carousel";
@@ -21,6 +23,7 @@ const Carousel = ({
   spaceBetween = 16,
   swiperProps,
 }) => {
+  const { theme } = useTheme();
   const modules = [];
   if (navigation) {
     modules.push(Navigation);
@@ -49,7 +52,7 @@ const Carousel = ({
           : false
       }
       breakpoints={breakpoints || defaultBreakpoints}
-      className={cn(CUSTOM_CLASSES_CLASS, className)}
+      className={cn(CUSTOM_CLASSES_CLASS, theme === THEME.DARK, className)}
       loop={loop}
       modules={modules}
       navigation={navigation}
