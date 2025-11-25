@@ -1,5 +1,6 @@
 import { fetchSearchMovies } from "@api/fetchSearchMovies";
 import { MovieCard } from "@components";
+import { ErrorMessage, LoadingSpinner } from "@components";
 import { useFetch } from "@hooks";
 import { useSearchParams } from "react-router";
 
@@ -23,11 +24,11 @@ const Search = () => {
     );
   }
   if (isLoading) {
-    return <div>로딩중...</div>;
+    return <LoadingSpinner />;
   }
 
   if (error) {
-    return <div>ErrorL {error.message}</div>;
+    return <ErrorMessage error={error} />;
   }
 
   if (!data?.results?.length) {

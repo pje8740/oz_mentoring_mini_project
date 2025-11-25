@@ -32,14 +32,18 @@ function useFetch({ options = {}, queryFn, queryKey = [] }) {
           signal: controller.signal,
         });
 
-        setData(result);
+        if (!controller.signal.aborted) {
+          setData(result);
+        }
       } catch (err) {
         if (err.name !== "AbortError") {
           setError(err);
         }
       } finally {
         if (!controller.signal.aborted) {
-          setIsLoading(false);
+          if (!controller.signal.aborted) {
+            setIsLoading(false);
+          }
         }
       }
     };
