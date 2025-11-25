@@ -109,7 +109,7 @@ export const SearchBar = () => {
     <div className="flex w-full items-center justify-center">
       <input
         // 디자인 (Tailwind CSS)
-        className="w-full rounded-md border border-gray-300 px-4 py-2 text-gray-600 focus:outline-none"
+        className="w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-600 focus:outline-none dark:border-gray-800 dark:text-gray-200 dark:placeholder:text-gray-400"
         // 타자 칠 때마다 handleInputChange 함수를 실행해요.
         onChange={handleInputChange}
         // 아무것도 없을 때 보여줄 안내 문구

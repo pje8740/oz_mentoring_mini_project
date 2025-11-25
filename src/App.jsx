@@ -24,13 +24,15 @@ function App() {
   ];
 
   return (
-    <Routes>
-      <Route element={<MainLayout />}>
-        {ROUTES.map((route) => (
-          <Route element={route.element} key={route.path} path={route.path} />
-        ))}
-      </Route>
-    </Routes>
+    <ThemeProvider>
+      <Routes>
+        <Route element={<MainLayout />}>
+          {ROUTES.map((route) => (
+            <Route element={route.element} key={route.path} path={route.path} />
+          ))}
+        </Route>
+      </Routes>
+    </ThemeProvider>
   );
 }
 

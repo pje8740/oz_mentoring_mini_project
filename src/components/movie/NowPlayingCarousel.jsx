@@ -19,11 +19,11 @@ const NowPlayingCarousel = () => {
 
   return (
     <section className="w-full px-4">
-      <h1 className="mt-4 text-xl text-gray-700">상영중</h1>
+      <h1 className="mt-4 text-xl text-gray-700 dark:text-gray-200">상영중</h1>
       {isLoading ? (
         <p className="invisible text-sm text-gray-500">로딩중...</p>
       ) : (
-        <p className="text-sm text-gray-500">
+        <p className="text-sm text-gray-500 dark:text-gray-500">
           {data.dates.minimum} - {data.dates.maximum}
         </p>
       )}

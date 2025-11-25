@@ -24,7 +24,7 @@ const MovieCard = ({ movie }) => {
           <h2 className="line-clamp-2 text-sm font-semibold text-white">
             {movie.title}
           </h2>
-          <p className="mt-1 text-xs text-yellow-400">
+          <p className="mt-1 flex items-center gap-1 text-xs text-yellow-400">
             ⭐ {movie.voteAverage.toFixed(1)}
           </p>
         </div>
