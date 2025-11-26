@@ -65,7 +65,7 @@ export const Detail = () => {
             </div>
           </header>
           <section className="rounded-3xl bg-white p-6 shadow-sm dark:bg-gray-800">
-            <h2 className="text-lg font-semibold text-neutral-100 dark:bg-gray-900">
+            <h2 className="text-lg font-semibold text-neutral-900 dark:bg-gray-900 dark:text-neutral-100">
               줄거리
             </h2>
             <p className="mt-3 leading-relaxed text-neutral-700 dark:text-gray-300">
