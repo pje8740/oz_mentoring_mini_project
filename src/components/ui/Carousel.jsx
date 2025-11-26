@@ -1,5 +1,5 @@
 import { THEME } from "@constants";
-import useTheme from "@hooks";
+import { useTheme } from "@hooks";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";

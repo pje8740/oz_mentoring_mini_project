@@ -49,7 +49,7 @@ export const Detail = () => {
             </div>
             <div className="flex flex-wrap items-center gap-4">
               <span className="flex items-center gap-2 rounded-full border border-yellow-400 px-3 text-sm text-yellow-500 dark:border-yellow-400 dark:text-yellow-400">
-                <StarIcon className="h-3 w-3 fill-current" /> ?
+                <StarIcon className="h-3 w-3 fill-current" />
                 {voteAverage.toFixed(1)}
               </span>
               <ul className="flex flex-wrap gap-2 text-sm text-neutral-700 dark:text-gray-300">
@@ -65,7 +65,7 @@ export const Detail = () => {
             </div>
           </header>
           <section className="rounded-3xl bg-white p-6 shadow-sm dark:bg-gray-800">
-            <h2 className="text-lg font-semibold text-neutral-900 dark:bg-gray-100">
+            <h2 className="text-lg font-semibold text-neutral-100 dark:bg-gray-900">
               줄거리
             </h2>
             <p className="mt-3 leading-relaxed text-neutral-700 dark:text-gray-300">

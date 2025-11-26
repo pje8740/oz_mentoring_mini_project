@@ -34,11 +34,6 @@ const NowPlayingCarousel = () => {
         slidesPerView={4}
         spaceBetween={16}
       >
-        {data.results.map((movie) => (
-          <SwiperSlide key={movie.id}>
-            <MovieCard movie={movie} />
-          </SwiperSlide>
-        ))}
         {isLoading
           ? Array.from({ length: 8 }).map((_, index) => (
               <SwiperSlide key={index}>

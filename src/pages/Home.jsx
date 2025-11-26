@@ -16,7 +16,7 @@ export const Home = () => {
   return (
     <div className="flex flex-col bg-neutral-50 dark:bg-gray-950">
       <NowPlayingCarousel />
-      <section className="mx-auto grid grid-cols-2 gap-4 px-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+      <section className="mx-auto gap-4 px-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
         <h1 className="px-6 text-xl text-gray-700 dark:text-gray-200">
           POPULAR MOVIES
         </h1>

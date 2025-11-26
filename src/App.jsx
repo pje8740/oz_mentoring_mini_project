@@ -1,5 +1,6 @@
 import { MainLayout } from "@components";
 import { ROUTE_PATHS } from "@constants";
+import ThemeProvider from "@contexts/ThemeProvider";
 import { Detail, Home, NotFound, Search } from "@pages";
 import { Route, Routes } from "react-router";
 
