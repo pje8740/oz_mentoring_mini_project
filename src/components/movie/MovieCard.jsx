@@ -26,7 +26,7 @@ const MovieCard = ({ movie }) => {
             {movie.title}
           </h2>
           <p className="mt-1 flex items-center gap-1 text-xs text-yellow-400">
-            <StarIcon className="h-3 w-3 fill-current" />{" "}
+            <StarIcon className="h-3 w-3 fill-current" />
             {movie.voteAverage.toFixed(1)}
           </p>
         </div>

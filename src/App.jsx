@@ -1,8 +1,8 @@
 import { MainLayout } from "@components";
 import { ROUTE_PATHS } from "@constants";
 import ThemeProvider from "@contexts/ThemeProvider";
-import { Detail, Home, NotFound, Search } from "@pages";
-import { Route, Routes } from "react-router";
+import { Detail, Home, Login, NotFound, Search, SignUp } from "@pages";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const ROUTES = [
@@ -21,6 +21,14 @@ function App() {
     {
       element: <NotFound />,
       path: ROUTE_PATHS.NOT_FOUND,
+    },
+    {
+      element: <Login />,
+      path: ROUTE_PATHS.LOGIN,
+    },
+    {
+      element: <SignUp />,
+      path: ROUTE_PATHS.SIGNUP,
     },
   ];
 
