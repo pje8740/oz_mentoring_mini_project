@@ -21,6 +21,12 @@ const Header = () => {
           <SearchBar />
         </div>
         <div className="flex flex-1 items-center justify-end">
+          <Link
+            className="text-gray-900 dark:text-gray-100"
+            to={ROUTE_PATHS.LOGIN}
+          >
+            로그인
+          </Link>
           <ThemeToggle />
         </div>
       </div>

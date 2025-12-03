@@ -2,7 +2,7 @@ import { MainLayout } from "@components";
 import { ROUTE_PATHS } from "@constants";
 import ThemeProvider from "@contexts/ThemeProvider";
 import { Detail, Home, Login, NotFound, Search, SignUp } from "@pages";
-import { Route, Routes } from "react-router";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const ROUTES = [

@@ -110,5 +110,5 @@ function SignUp() {
     </AuthFormContainer>
   );
 }
-
+console.log(import.meta.env.VITE_SUPABASE_URL);
 export default SignUp;
