@@ -12,6 +12,7 @@
     "format": "prettier --cache --write ."
   },
   "dependencies": {
+    "@commitlint/format": "^20.0.0",
     "@supabase/supabase-js": "^2.84.0",
     "@tailwindcss/vite": "^4.1.17",
     "clsx": "^2.1.1",
